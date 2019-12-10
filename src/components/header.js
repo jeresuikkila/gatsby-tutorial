@@ -2,6 +2,8 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import "./header.css"
+
 const Header = ({ siteTitle }) => (
   <header
     style={{
@@ -16,7 +18,7 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h3 style={{ display: "inline", margin: 0 }}>
         <Link
           to="/"
           style={{
@@ -26,7 +28,14 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
-      </h1>
+      </h3>
+      <ul style={{ listStyle: "none", float: "right" }}>
+        <li>
+          <Link to="/page-2/" activeStyle={{ textDecoration: "underline" }}>
+            Page 2
+          </Link>
+        </li>
+      </ul>
     </div>
   </header>
 )
