@@ -42,6 +42,14 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    // For JSON files
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
