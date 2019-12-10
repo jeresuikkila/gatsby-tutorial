@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-        <main>{children}</main>
+        <main style={{ minHeight: "60vh" }}>{children}</main>
       </div>
       <Footer>
         <div>© {new Date().getFullYear()}, Built with Gatsby</div>

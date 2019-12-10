@@ -2,7 +2,7 @@ import Typography from "typography"
 
 const typography = new Typography({
   title: "Valuemotive",
-  baseFontSize: "16px",
+  baseFontSize: "18px",
   baseLineHeight: 1.5,
   scaleRatio: 2,
   headerFontFamily: ["Nunito", "sans-serif"],
